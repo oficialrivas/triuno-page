@@ -1,0 +1,24 @@
+
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: triuno-web
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    # Uncomment to enable Traefik configuration in the future
+    # labels:
+    #   - "traefik.enable=true"
+    #   - "traefik.http.routers.triunoweb.rule=Host(`triuno.com`)"
+    #   - "traefik.http.routers.triunoweb.entrypoints=websecure"
+    #   - "traefik.http.services.triunoweb.loadbalancer.server.port=3000"
