@@ -13,7 +13,15 @@
 
   --color-background: var(--color-triuno-900);
   --color-foreground: #ffffff;
-  
+
+  --color-amber-copper: #A34F22;
+  --color-dark-amber: #C46A2A;
+  --color-bronze: #D58A3A;
+  --color-muted-glow: #6B2E14;
+  --color-deep-brown: #120804;
+  --color-bg-primary: #050505;
+  --color-bg-secondary: #0A0806;
+
   --font-sans: var(--font-neue-montreal);
   --font-mono: var(--font-geist-mono);
 }
@@ -25,12 +33,10 @@
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
-  /* Degradado con énfasis en los colores oscuros y naranjas al centro */
   background-image: radial-gradient(ellipse at top center, var(--color-triuno-500) 0%, var(--color-triuno-600) 20%, var(--color-triuno-700) 40%, var(--color-triuno-900) 100%);
   background-attachment: fixed;
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 @keyframes gradient {
