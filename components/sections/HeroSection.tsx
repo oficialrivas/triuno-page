@@ -3,7 +3,8 @@
 import { DotWave } from "@/components/ui/dot-wave";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
 import { FlipWords } from "@/components/ui/flip-words";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import Image from "next/image";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useRef, useCallback } from "react";
 
 function MagneticCard({ children }: { children: React.ReactNode }) {
@@ -58,22 +59,22 @@ export function HeroSection() {
         <div className="relative z-20 flex items-center justify-center w-full h-full">
           <div className="w-[250px] h-[250px] [transform-style:preserve-3d] animate-[roll_20s_linear_infinite]">
             <div className="absolute inset-0 [transform:translateZ(125px)]">
-              <img src="/logo1.svg" alt="Triuno" className="w-full h-full object-contain" />
+              <Image src="/logo1.svg" alt="Triuno" width={250} height={250} className="w-full h-full object-contain" priority />
             </div>
             <div className="absolute inset-0 [transform:translateZ(-125px)]">
-              <img src="/logo1.svg" alt="Triuno" className="w-full h-full object-contain" />
+              <Image src="/logo1.svg" alt="Triuno" width={250} height={250} className="w-full h-full object-contain" priority />
             </div>
             <div className="absolute inset-0 [transform:rotateY(-90deg) translateZ(125px)]">
-              <img src="/logo1.svg" alt="Triuno" className="w-full h-full object-contain" />
+              <Image src="/logo1.svg" alt="Triuno" width={250} height={250} className="w-full h-full object-contain" priority />
             </div>
             <div className="absolute inset-0 [transform:rotateY(90deg) translateZ(125px)]">
-              <img src="/logo1.svg" alt="Triuno" className="w-full h-full object-contain" />
+              <Image src="/logo1.svg" alt="Triuno" width={250} height={250} className="w-full h-full object-contain" priority />
             </div>
             <div className="absolute inset-0 [transform:rotateX(90deg) translateZ(125px)]">
-              <img src="/logo1.svg" alt="Triuno" className="w-full h-full object-contain" />
+              <Image src="/logo1.svg" alt="Triuno" width={250} height={250} className="w-full h-full object-contain" priority />
             </div>
             <div className="absolute inset-0 [transform:rotateX(-90deg) translateZ(125px)]">
-              <img src="/logo1.svg" alt="Triuno" className="w-full h-full object-contain" />
+              <Image src="/logo1.svg" alt="Triuno" width={250} height={250} className="w-full h-full object-contain" priority />
             </div>
           </div>
         </div>

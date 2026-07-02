@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Globe, MessageCircle, Share2, Mail } from "lucide-react";
+import { Globe, MessageCircle, Share2 } from "lucide-react";
 
 export function Footer() {
   return (
